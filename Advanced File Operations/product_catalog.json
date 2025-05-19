@@ -1,0 +1,98 @@
+{
+    "electronics": {
+      "computers": {
+        "laptops": [
+          {
+            "id": "LP001",
+            "name": "MacBook Pro",
+            "price": 1299,
+            "specs": {
+              "cpu": "M1",
+              "ram": "16GB"
+            }
+          },
+          {
+            "id": "LP002",
+            "name": "Dell XPS",
+            "price": 999,
+            "specs": {
+              "cpu": "i7",
+              "ram": "8GB"
+            }
+          }
+        ],
+        "desktops": [
+          {
+            "id": "DT001",
+            "name": "iMac",
+            "price": 1499,
+            "specs": {
+              "cpu": "M1",
+              "ram": "8GB"
+            }
+          },
+          {
+            "id": "DT002",
+            "name": "HP Pavilion",
+            "price": 799,
+            "specs": {
+              "cpu": "i5",
+              "ram": "16GB"
+            }
+          }
+        ]
+      },
+      "phones": {
+        "smartphones": [
+          {
+            "id": "SP001",
+            "name": "iPhone 13",
+            "price": 799,
+            "specs": {
+              "screen": "6.1",
+              "camera": "12MP"
+            }
+          },
+          {
+            "id": "SP002",
+            "name": "Samsung S21",
+            "price": 699,
+            "specs": {
+              "screen": "6.2",
+              "camera": "64MP"
+            }
+          }
+        ]
+      }
+    },
+    "appliances": {
+      "kitchen": {
+        "refrigerators": [
+          {
+            "id": "RF001",
+            "name": "LG Smart Fridge",
+            "price": 2499,
+            "specs": {
+              "capacity": "28cu ft",
+              "features": [
+                "ice maker",
+                "smart display"
+              ]
+            }
+          },
+          {
+            "id": "RF002",
+            "name": "Samsung Fridge",
+            "price": 1899,
+            "specs": {
+              "capacity": "25cu ft",
+              "features": [
+                "ice maker"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+  

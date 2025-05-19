@@ -1,0 +1,118 @@
+{
+  "customers": [
+    {
+      "id": "1001",
+      "name": "John Smith",
+      "email": "john.smith@example.com",
+      "address": "123 Main St, Anytown, CA",
+      "orders": [
+        {
+          "id": "O-5501",
+          "date": "2023-02-15",
+          "items": [
+            {
+              "product_id": "P101",
+              "name": "Widget A",
+              "category": "Tools",
+              "quantity": 2,
+              "unit_price": 19.99,
+              "subtotal": 39.98
+            },
+            {
+              "product_id": "P102",
+              "name": "Widget B",
+              "category": "Tools",
+              "quantity": 1,
+              "unit_price": 29.99,
+              "subtotal": 29.99
+            }
+          ],
+          "total": 69.97
+        },
+        {
+          "id": "O-5502",
+          "date": "2023-03-01",
+          "items": [
+            {
+              "product_id": "P103",
+              "name": "Widget C",
+              "category": "Electronics",
+              "quantity": 5,
+              "unit_price": 9.99,
+              "subtotal": 49.95
+            }
+          ],
+          "total": 49.95
+        }
+      ],
+      "total_orders": 2,
+      "total_spent": 119.92
+    },
+    {
+      "id": "1002",
+      "name": "Jane Doe",
+      "email": "jane.doe@example.com",
+      "address": "456 Oak Ave, Somewhere, NY",
+      "orders": [
+        {
+          "id": "O-5503",
+          "date": "2023-02-28",
+          "items": [
+            {
+              "product_id": "P101",
+              "name": "Widget A",
+              "category": "Tools",
+              "quantity": 3,
+              "unit_price": 19.99,
+              "subtotal": 59.97
+            },
+            {
+              "product_id": "P104",
+              "name": "Widget D",
+              "category": "Electronics",
+              "quantity": 2,
+              "unit_price": 15.5,
+              "subtotal": 31.0
+            }
+          ],
+          "total": 90.97
+        }
+      ],
+      "total_orders": 1,
+      "total_spent": 90.97
+    },
+    {
+      "id": "1003",
+      "name": "Bob Johnson",
+      "email": "bob@example.com",
+      "address": "789 Pine Rd, Elsewhere, TX",
+      "orders": [
+        {
+          "id": "O-5504",
+          "date": "2023-03-02",
+          "items": [
+            {
+              "product_id": "P105",
+              "name": "Widget E",
+              "category": "Home",
+              "quantity": 1,
+              "unit_price": 49.99,
+              "subtotal": 49.99
+            }
+          ],
+          "total": 49.99
+        }
+      ],
+      "total_orders": 1,
+      "total_spent": 49.99
+    }
+  ],
+  "metadata": {
+    "total_customers": 3,
+    "total_orders": 4,
+    "total_products_sold": 14,
+    "total_revenue": 260.88,
+    "most_popular_product": "Widget A",
+    "most_popular_category": "Electronics"
+  }
+}

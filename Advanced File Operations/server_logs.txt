@@ -1,0 +1,9 @@
+[2023-03-01 08:15:22] [ERROR] [AUTH-SERVICE] Failed login attempt: Invalid credentials (E4001)
+[2023-03-01 08:16:05] [INFO] [MAIL-SERVICE] Email delivered successfully
+[2023-03-01 08:17:30] [CRITICAL] [DATABASE] Connection pool exhausted (E1001)
+[2023-03-01 08:20:15] [WARNING] [STORAGE] Disk space below 15% (W2001)
+[2023-03-01 09:05:44] [CRITICAL] [NETWORK] Load balancer failure (E2003)
+[2023-03-01 09:22:17] [ERROR] [AUTH-SERVICE] Authentication server timeout (E4002)
+[2023-03-01 10:15:03] [INFO] [MONITORING] Daily health check completed
+[2023-03-01 11:47:22] [ERROR] [AUTH-SERVICE] Failed login attempt: Invalid credentials (E4001)
+[2023-03-01 12:01:45] [CRITICAL] [DATABASE] Connection pool exhausted (E1001)

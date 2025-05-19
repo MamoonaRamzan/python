@@ -1,0 +1,2 @@
+Recurrent neural networks are used for natural language processing tasks.
+They capture sequential data patterns efficiently.

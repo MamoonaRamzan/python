@@ -1,0 +1,7 @@
+customer_id,customer_name,customer_email,order_id,order_date,shipping_address,product_id,product_name,category,quantity,unit_price
+1001,John Smith,john.smith@example.com,O-5501,2023-02-15,"123 Main St, Anytown, CA",P101,Widget A,Tools,2,19.99
+1001,John Smith,john.smith@example.com,O-5501,2023-02-15,"123 Main St, Anytown, CA",P102,Widget B,Tools,1,29.99
+1001,John Smith,john.smith@example.com,O-5502,2023-03-01,"123 Main St, Anytown, CA",P103,Widget C,Electronics,5,9.99
+1002,Jane Doe,jane.doe@example.com,O-5503,2023-02-28,"456 Oak Ave, Somewhere, NY",P101,Widget A,Tools,3,19.99
+1002,Jane Doe,jane.doe@example.com,O-5503,2023-02-28,"456 Oak Ave, Somewhere, NY",P104,Widget D,Electronics,2,15.50
+1003,Bob Johnson,bob@example.com,O-5504,2023-03-02,"789 Pine Rd, Elsewhere, TX",P105,Widget E,Home,1,49.99

@@ -1,0 +1,57 @@
+pipeline:
+  name: sales_data_analyzer
+  description: "Process and analyze sales data from multiple sources"
+  inputs:
+    - name: customer_data
+      type: csv
+      path: data/customers.csv
+      required: true
+    - name: sales_transactions
+      type: json
+      path: data/transactions.json
+      required: true
+    - name: product_catalog
+      type: csv
+      path: data/products.csv
+      required: true
+  steps:
+    - name: data_validation
+      module: validators.basic
+      description: "Validate input data structure and content"
+      depends_on: []
+      parameters:
+        strict_mode: true
+        log_invalid: true
+    - name: data_transformation
+      module: transformers.sales
+      description: "Transform and normalize sales data"
+      depends_on: [data_validation]
+      parameters:
+        currency_normalize: true
+        date_format: "%Y-%m-%d"
+    - name: customer_analysis
+      module: analytics.customer
+      description: "Analyze customer purchasing patterns"
+      depends_on: [data_transformation]
+      parameters:
+        segment_by: ["region", "product_category"]
+    - name: sales_reporting
+      module: reporting.sales
+      description: "Generate sales reports and visualizations"
+      depends_on: [data_transformation, customer_analysis]
+      parameters:
+        formats: ["csv", "json", "html"]
+        include_charts: true
+  outputs:
+    - name: validation_report
+      type: json
+      path: output/validation_results.json
+      source_step: data_validation
+    - name: customer_segments
+      type: csv
+      path: output/customer_segments.csv
+      source_step: customer_analysis
+    - name: sales_report
+      type: html
+      path: output/sales_report.html
+      source_step: sales_reporting
